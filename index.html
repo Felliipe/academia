@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeFit Gym - Transforme seu Corpo</title>
+    <meta name="description" content="Academia LifeFit Gym. O melhor ambiente para sua evolução.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Montserrat (Body) and Bebas Neue (Headings - Fallback) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              iron: {
+                black: '#050505', // Um preto ligeiramente mais rico
+                dark: '#0f0f0f',
+                red: '#E50914',
+                white: '#FFFFFF',
+                gray: '#1f1f1f',
+                lightGray: '#333333'
+              }
+            },
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+              // Prioriza Integral CF, depois Integral, e usa Bebas Neue como fallback seguro
+              display: ['Integral CF', 'Integral', 'Bebas Neue', 'sans-serif'],
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: var(--bg);
+        color: #FFFFFF;
+        overflow-x: hidden;
+      }
+      /* Scrollbar Personalizada - Look Profissional */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f0f0f; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #E50914; 
+      }
+
+      /* Utilitário para seleção de texto */
+      ::selection {
+        background: #E50914;
+        color: #fff;
+      }
+    </style>
+  <!-- Removed importmap to prefer local dependencies resolved by Vite -->
+  
+  <script type="module" crossorigin src="/academia/assets/index-CXY5YH_b.js"></script>
+  <link rel="stylesheet" crossorigin href="/academia/assets/index-yzOk_ZGf.css">
+</head>
+  <body>
+    <!-- Fallback visível quando o app React não é carregado (ex: sem Vite/Node) -->
+    <div id="fallback" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(5,5,5,1) 0%, rgba(10,10,10,1) 100%);z-index:9999;padding:24px;">
+      <div style="max-width:900px;text-align:center;color:#fff;">
+        <h1 style="font-size:32px;margin-bottom:8px;">LifeFit Gym</h1>
+        <p style="color:#ddd;margin-bottom:16px;">Visão estática: o servidor de desenvolvimento não foi iniciado, então o React não foi transpilado/servido.</p>
+        <p style="color:#bbb;margin-bottom:20px;">Para ver o site completo, instale o Node.js e inicie o Vite no projeto:</p>
+        <code style="display:block;background:#111;padding:10px;border-radius:6px;margin-bottom:12px;color:#fff;">cd "c:\\Users\\felip\\Downloads\\lifefit-gym (1)" &amp;&amp; npm install &amp;&amp; npm run dev</code>
+        <a href="#" onclick="window.open('http://localhost:3000','_blank')" style="display:inline-block;margin-top:8px;padding:10px 16px;background:#e50914;color:#fff;border-radius:8px;text-decoration:none;">Abrir localhost:3000</a>
+      </div>
+    </div>
+    <div id="root"></div>
+</body>
+</html>
